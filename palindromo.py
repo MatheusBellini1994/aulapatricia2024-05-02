@@ -4,8 +4,8 @@ len = len(palavra)
 
 reverso = ""
 
-for i in range(len):
-    reverso = reverso + palavra[len-1-i]
+for letra in palavra:
+    reverso = letra + reverso
 
 if reverso==palavra:
     print(f'A palavra "{palavra}" é um palíndromo!')

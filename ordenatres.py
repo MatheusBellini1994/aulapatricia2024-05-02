@@ -4,18 +4,23 @@ b = input("Digite o segundo número: ")
 
 c = input("Digite o terceiro número: ")
 
-if a<=b:
-    if c<=a:
-        print(f"Os números em ordem são {c}, {a} e {b}")
-    elif c<=b:
-        print(f"Os números em ordem são {a}, {c} e {b}")
-    else:
-        print(f"Os números em ordem são {a}, {b} e {c}")
-else:
-    if c<=b:
-        print(f"Os números em ordem são {c}, {b} e {a}")
-    elif c<=a:
-        print(f"Os números em ordem são {b}, {c} e {a}")
-    else:
-        print(f"Os números em ordem são {b}, {a} e {c}")
-        
+temp=0
+
+if a>b:
+    temp=a
+    a=b
+    b=temp
+
+if a>c:
+    temp=a
+    a=c
+    c=temp
+
+if b>c:
+    temp=b
+    b=c
+    c=temp
+
+print(f"O menor número é {a};")
+print(f"O número intermediário é {b};")
+print(f"E o maior número é {c};")

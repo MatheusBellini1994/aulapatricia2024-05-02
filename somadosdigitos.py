@@ -1,11 +1,9 @@
 n = int(input("Digite um número natural: "))
 
-x = n
-
 soma = 0
 
-while x !=0:
-    soma = soma + x%10
-    x = x//10
+while n !=0:
+    soma = soma + n%10
+    n = n//10
 
-print(f"A soma dos dígitos de {n} é {soma}")
+print(f"A soma dos dígitos é {soma}")
